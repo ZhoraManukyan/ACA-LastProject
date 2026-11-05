@@ -34,12 +34,16 @@ Both models were evaluated using confusion matrices to compare performance.
 
 ## 📈 Results
 
-Confusion matrices for both models are included in the repository:
-
-| Model | Visualization |
+| Model | Result |
 |---|---|
-| Logistic Regression | `confusion_matrix.png` |
-| Decision Tree | `confusion_matrix_tree.png` |
+| Classification model (team strength) | Accuracy **0.90** |
+| Rating model — Decision Tree + GridSearchCV | MSE **0.002** |
+
+<img src="cover_actual_vs_predicted.png" width="600"/>
+
+Predicted vs actual ratings: points lie close to the diagonal, so the model ranks teams well.
+
+Confusion matrices for the tournament-round models: `confusion_matrix.png` (Logistic Regression), `confusion_matrix_tree.png` (Decision Tree).
 
 ---
 
